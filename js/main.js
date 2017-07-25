@@ -228,7 +228,7 @@ $('#cancel-btn').on('click', () => {
 
 $(window).on("load", () => {
   // Call function to check if localStorage exists
-  if (supportsLocalStorage) {
+  if (supportsLocalStorage  () )  {
     // If localStorage exists, retrieve settings values and set to variables below
     let mailNotificationsStatus = JSON.parse(localStorage.getItem('notifications'));
     let profileStatus = JSON.parse(localStorage.getItem('profile'));
